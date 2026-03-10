@@ -1,0 +1,55 @@
+.inspection-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Accordion container */
+.custom-accordion .accordion-item {
+    background: transparent;
+}
+
+/* Closed box */
+.custom-accordion-btn {
+    background: #001f4e;
+    color: white;
+    border-radius: 8px !important;
+    padding: 1.1rem 1.3rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect */
+.custom-accordion-btn:hover {
+    background: #002b6e;
+    color: white;
+}
+
+/* When open */
+.custom-accordion-btn:not(.collapsed) {
+    background: #001f4e;
+    color: white;
+}
+
+/* Dropdown body */
+.custom-accordion-body {
+    background: #f8f9fa;
+    border-radius: 0 0 8px 8px;
+    padding: 1.1rem 1.3rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove bootstrap glow */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* Arrow animation */
+.accordion-button::after {
+    filter: invert(1);
+    transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+}
