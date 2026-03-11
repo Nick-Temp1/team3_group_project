@@ -1,20 +1,39 @@
-.welcome-banner {
-    background: linear-gradient(135deg, #80c341 0%, #80c341 100%);
-    color: #fff;
-    padding: 2.5rem 0;
+.welcome-background {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+    color: white;
 }
 
-.welcome-banner h1 {
-    font-size: 2rem;
+/* Dark overlay so text is readable */
+.welcome-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.welcome-overlay {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+.welcome-overlay h1 {
+    font-size: 3rem;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.4rem;
 }
 
-.welcome-banner p {
-    font-size: 1.05rem;
-    opacity: 0.9;
-    margin-bottom: 0;
+.welcome-overlay p {
+    font-size: 1.2rem;
 }
 
 .section-title {
@@ -33,13 +52,15 @@
 }
 
 .service-card {
-    background: #fff;
+    background: #a4a7aa;
     border: 1px solid var(--dmv-gray);
     border-top: 4px solid var(--dmv-green);
     border-radius: 6px;
     padding: 1.5rem 1.25rem;
     text-align: center;
-    transition: box-shadow 0.2s, transform 0.2s;
+    transition:
+        box-shadow 0.2s,
+        transform 0.2s;
     height: 100%;
 }
 
@@ -121,13 +142,13 @@
 }
 
 .ql-grid-wrapper {
-    max-width: 800px;   /* adjust this to whatever size you want */
-    margin: 0 auto;     /* center it on the page */
+    max-width: 800px; /* adjust this to whatever size you want */
+    margin: 0 auto; /* center it on the page */
 }
 
 /* The grid itself: 2 columns, 2 rows, zero gap */
 .ql-grid {
-     display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     grid-auto-rows: 400px; /* each row height = half viewport width = one column width */
@@ -150,12 +171,12 @@
 
 /* ---- Image cells ---- */
 .ql-cell.ql-image {
-    padding: 0;         /* no padding — image is flush */
+    padding: 0; /* no padding — image is flush */
 }
 
 .ql-cell.ql-image img {
     position: absolute;
-    inset: 0;           /* cover the entire cell */
+    inset: 0; /* cover the entire cell */
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -169,10 +190,14 @@
 
 /* Subtle dark overlay so the label is readable */
 .ql-cell.ql-image::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 60%);
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.05) 60%
+    );
     pointer-events: none;
 }
 
@@ -185,12 +210,12 @@
     font-size: 1.1rem;
     font-weight: 700;
     letter-spacing: 0.4px;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* ---- Text cells — only these have inner padding ---- */
 .ql-cell.ql-text {
-    padding: 2.5rem 2.75rem;   /* margin lives here, not in the grid */
+    padding: 2.5rem 2.75rem; /* margin lives here, not in the grid */
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -235,7 +260,7 @@
     text-transform: uppercase;
     letter-spacing: 0.6px;
     color: #fff;
-    border-bottom: 2px solid rgba(255,255,255,0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 2px;
     text-decoration: none;
     transition: border-color 0.2s;
@@ -276,7 +301,7 @@
 }
 
 .hours-card:hover {
-    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
 .hours-card h6 {
@@ -319,7 +344,11 @@
    Online Services CTA
    ===================== */
 .skip-trip-card {
-    background: linear-gradient(135deg, var(--dmv-blue) 0%, var(--dmv-blue-light) 100%);
+    background: linear-gradient(
+        135deg,
+        var(--dmv-blue) 0%,
+        var(--dmv-blue-light) 100%
+    );
     color: #fff;
     border-radius: 8px;
     padding: 1.5rem;
@@ -346,10 +375,11 @@
     padding: 0.4rem 1.2rem;
     border-radius: 20px;
     text-decoration: none;
-    transition: background 0.2s, color 0.2s;
+    transition:
+        background 0.2s,
+        color 0.2s;
 }
 
 .skip-trip-card a:hover {
     background: #e3f2fd;
 }
-

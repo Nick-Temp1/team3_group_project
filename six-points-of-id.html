@@ -8,6 +8,10 @@
             rel="stylesheet"
         />
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link
             rel="stylesheet"
             type="text/css"
             media="screen"
@@ -120,19 +124,16 @@
 
         <main>
             <!-- Page Header -->
-            <div
-                class="py-5 text-center text-white"
-                style="background-color: #82c341"
-            >
-                <div class="container">
-                    <h1 class="display-4 fw-bold">Six Points of ID</h1>
+            <section class="welcome-banner">
+                <div class="container text-center">
+                    <h1 class="display-4">Six Points of ID</h1>
                 </div>
-            </div>
+            </section>
 
             <!-- Content Section -->
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-md-8 mx-auto">
+                    <div class="col-md-8">
                         <h2 class="mb-3">What is the Six Points of ID?</h2>
                         <p>
                             The Six Points of ID system is used to verify your
@@ -161,13 +162,44 @@
                         <!-- Hidden content -->
                         <div id="moreInfo" class="mt-4" style="display: none">
                             <h4>Example Documents</h4>
-                            <ul>
-                                <li>Passport – 4 points</li>
-                                <li>Driver's License – 3 points</li>
-                                <li>Birth Certificate – 2 points</li>
-                                <li>Utility Bill – 1 point</li>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-passport me-2 text-primary"
+                                    ></i
+                                    >Passport - 5 Points
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-file-earmark-text me-2 text-success"
+                                    ></i
+                                    >Birth Certificate - 4 Points
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-person-badge me-2 text-warning"
+                                    ></i
+                                    >Driver’s License - 3 Points
+                                </li>
+                                <li class="list-group-item">
+                                    <i
+                                        class="bi bi-card-text me-2 text-danger"
+                                    ></i
+                                    >Social Security Card - 2 Points
+                                </li>
+                                <li class="list-group-item">
+                                    <i class="bi bi-house me-2 text-info"></i
+                                    >Utility Bill - 1 Point
+                                </li>
                             </ul>
                         </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img
+                            src="images/id.jpg"
+                            alt="Six Points of ID"
+                            class="img-fluid rounded"
+                        />
                     </div>
                 </div>
             </div>

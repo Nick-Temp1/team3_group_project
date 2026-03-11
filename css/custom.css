@@ -8,3 +8,16 @@ body::before {
     /* Example linear gradient: left to right */
     background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
 }
+
+.welcome-banner {
+    background: linear-gradient(135deg, #80c341 0%, #80c341 100%);
+    color: #fff;
+    padding: 0.5rem 0;
+}
+
+.welcome-banner h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
