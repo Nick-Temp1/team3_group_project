@@ -1,0 +1,8 @@
+.step-card {
+    cursor: pointer; /* Makes mouse a hand */
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+.step-card:hover {
+    transform: translateY(-1px); /* Slight lift on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

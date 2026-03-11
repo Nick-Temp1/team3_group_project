@@ -118,9 +118,60 @@
             </nav>
         </header>
 
-        <!-- Input html here in this section and create additional
-         sections if needed-->
-        <section><p>hello</p></section>
+        <main>
+            <!-- Page Header -->
+            <div
+                class="py-5 text-center text-white"
+                style="background-color: #82c341"
+            >
+                <div class="container">
+                    <h1 class="display-4 fw-bold">Six Points of ID</h1>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="mb-3">What is the Six Points of ID?</h2>
+                        <p>
+                            The Six Points of ID system is used to verify your
+                            identity. Different documents are assigned point
+                            values, and you must provide documents that total at
+                            least six points.
+                        </p>
+
+                        <h3 class="mt-4">Accepted Documents</h3>
+                        <ul>
+                            <li>Passport</li>
+                            <li>Birth Certificate</li>
+                            <li>Driver’s License</li>
+                            <li>Social Security Card</li>
+                            <li>Utility Bill</li>
+                        </ul>
+
+                        <button
+                            id="learnMoreBtn"
+                            class="btn btn-success mt-3"
+                            onclick="toggleMoreInfo()"
+                        >
+                            Learn More
+                        </button>
+
+                        <!-- Hidden content -->
+                        <div id="moreInfo" class="mt-4" style="display: none">
+                            <h4>Example Documents</h4>
+                            <ul>
+                                <li>Passport – 4 points</li>
+                                <li>Driver's License – 3 points</li>
+                                <li>Birth Certificate – 2 points</li>
+                                <li>Utility Bill – 1 point</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <!-- Footer -->
         <footer class="bg-dark text-white py-4">
@@ -129,14 +180,10 @@
                     &copy; 2026 DMV Website. All rights reserved.
                 </p>
                 <p class="mb-0">
-                    <a
-                        href="privacy.html"
-                        class="text-white text-decoration-none me-3"
+                    <a href="#" class="text-white text-decoration-none me-3"
                         >Privacy Policy</a
                     >
-                    <a
-                        href="contact.html"
-                        class="text-white text-decoration-none"
+                    <a href="#" class="text-white text-decoration-none"
                         >Contact Us</a
                     >
                 </p>
@@ -145,5 +192,7 @@
 
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="js/six-points-of-id.js"></script>
     </body>
 </html>
