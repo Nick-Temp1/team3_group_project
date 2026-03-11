@@ -13,7 +13,8 @@
             media="screen"
             href="css/custom.css"
         />
-        <title>Document</title>
+        <link rel="stylesheet" href="css/aboutus.css" />
+        <title>About Us</title>
     </head>
 
     <body>
@@ -120,7 +121,126 @@
 
         <!-- Input html here in this section and create additional
          sections if needed-->
-        <section><p>hello</p></section>
+        <section class="welcome-banner">
+            <div class="container text-center">
+                <h1 class="display-4">About Us</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <div
+                            class="accordion about-accordion"
+                            id="aboutAccordion"
+                        >
+                            <!-- Row 1: About Us (open by default) -->
+                            <div class="accordion-item accordion-row">
+                                <h2 class="accordion-header" id="headingAbout">
+                                    <button
+                                        class="accordion-button"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseAbout"
+                                        aria-expanded="true"
+                                        aria-controls="collapseAbout"
+                                    >
+                                        <i class="bi bi-info-circle me-2"></i>
+                                        About Us
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseAbout"
+                                    class="accordion-collapse collapse show"
+                                    data-bs-parent="#aboutAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <h3>Core Values</h3>
+                                        <p>
+                                            Our core values guide everything we
+                                            do. We are committed to serving the
+                                            public with integrity, transparency,
+                                            and excellence.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 2: Media Center -->
+                            <div class="accordion-item accordion-row">
+                                <h2 class="accordion-header" id="headingMedia">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseMedia"
+                                        aria-expanded="false"
+                                        aria-controls="collapseMedia"
+                                    >
+                                        <i class="bi bi-newspaper me-2"></i>
+                                        Contact Information
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseMedia"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#aboutAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <h3>Contact Information</h3>
+                                        <p>
+                                            For general inquiries, please
+                                            contact us at:
+                                        </p>
+                                        <ul>
+                                            <li>Phone: (123) 456-7890</li>
+                                            <li>Email: info@dmv.gov</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Row 3: Commission Rules and Regulations -->
+                            <div class="accordion-item accordion-row">
+                                <h2 class="accordion-header" id="headingRules">
+                                    <button
+                                        class="accordion-button collapsed"
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseRules"
+                                        aria-expanded="false"
+                                        aria-controls="collapseRules"
+                                    >
+                                        <i class="bi bi-journal-text me-2"></i>
+                                        Employment Opportunities
+                                    </button>
+                                </h2>
+                                <div
+                                    id="collapseRules"
+                                    class="accordion-collapse collapse"
+                                    data-bs-parent="#aboutAccordion"
+                                >
+                                    <div class="accordion-body">
+                                        <h3>Employment Opportunities</h3>
+                                        <p>
+                                            Join our team! We are always looking
+                                            for dedicated individuals to help us
+                                            serve the public. Visit our careers
+                                            page for current job openings.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /accordion -->
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </section>
 
         <!-- Footer -->
         <footer class="bg-dark text-white py-4">
@@ -129,14 +249,10 @@
                     &copy; 2026 DMV Website. All rights reserved.
                 </p>
                 <p class="mb-0">
-                    <a
-                        href="#"
-                        class="text-white text-decoration-none me-3"
+                    <a href="#" class="text-white text-decoration-none me-3"
                         >Privacy Policy</a
                     >
-                    <a
-                        href="#"
-                        class="text-white text-decoration-none"
+                    <a href="#" class="text-white text-decoration-none"
                         >Contact Us</a
                     >
                 </p>
