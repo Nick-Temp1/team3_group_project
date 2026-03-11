@@ -53,3 +53,38 @@
 .accordion-button:not(.collapsed)::after {
     transform: rotate(180deg);
 }
+
+.registration-bg {
+    background-image: url('../images/veh_register_bg.jpg');
+}
+
+.inspection-bg {
+    background-image: url('../images/veh_inspect_bg.jpg');
+}
+
+/* background layout */
+.page-background {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Gray overlay */
+.page-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 0;
+}
+
+/* Keep content above overlay */
+.page-background > * {
+    position: relative;
+    z-index: 1;
+}
+
+.transparent-light {
+    background-color: rgba(255, 255, 255, 0.85);
+}
