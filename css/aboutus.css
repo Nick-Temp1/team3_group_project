@@ -2,7 +2,6 @@
     background: linear-gradient(135deg, #80c341 0%, #80c341 100%);
     color: #fff;
     padding: 2.5rem 0;
-    margin-top: 66px; /* offset for fixed navbar */
 }
 
 .welcome-banner h1 {
