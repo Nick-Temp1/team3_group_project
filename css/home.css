@@ -1,0 +1,355 @@
+.welcome-banner {
+    background: linear-gradient(135deg, #80c341 0%, #80c341 100%);
+    color: #fff;
+    padding: 2.5rem 0;
+}
+
+.welcome-banner h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+}
+
+.welcome-banner p {
+    font-size: 1.05rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--dmv-green-dark);
+    border-bottom: 3px solid var(--dmv-green-light);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.services-section {
+    padding: 2.5rem 0;
+    background-color: var(--dmv-gray-light);
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid var(--dmv-gray);
+    border-top: 4px solid var(--dmv-green);
+    border-radius: 6px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+    height: 100%;
+}
+
+.service-card:hover {
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.15);
+    transform: translateY(-3px);
+}
+
+.service-card .service-icon {
+    font-size: 2.4rem;
+    color: var(--dmv-green);
+    margin-bottom: 0.75rem;
+}
+
+.service-card h5 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dmv-green-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.75rem;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.service-card ul li {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.service-card ul li a {
+    color: var(--dmv-blue-light);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.service-card ul li a:hover {
+    color: var(--dmv-green-dark);
+    text-decoration: underline;
+}
+
+.view-details-link {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--dmv-green);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.view-details-link:hover {
+    border-color: var(--dmv-green);
+    color: var(--dmv-green-dark);
+}
+
+/* =====================
+   Quick Links
+   ===================== */
+.quick-links-section {
+    /* No padding — grid goes edge-to-edge */
+    padding: 0;
+    background-color: #fff;
+}
+
+.quick-links-section h2.section-title {
+    /* Keep the heading inside normal page padding */
+    margin: 0 auto;
+    max-width: 1320px;
+    padding: 2.5rem 1.5rem 1.25rem;
+}
+
+.ql-grid-wrapper {
+    max-width: 800px;   /* adjust this to whatever size you want */
+    margin: 0 auto;     /* center it on the page */
+}
+
+/* The grid itself: 2 columns, 2 rows, zero gap */
+.ql-grid {
+     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-auto-rows: 400px; /* each row height = half viewport width = one column width */
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #001f4e;
+}
+
+/* ---- Shared cell base ---- */
+.ql-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+
+/* ---- Image cells ---- */
+.ql-cell.ql-image {
+    padding: 0;         /* no padding — image is flush */
+}
+
+.ql-cell.ql-image img {
+    position: absolute;
+    inset: 0;           /* cover the entire cell */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.ql-cell.ql-image:hover img {
+    transform: scale(1.04);
+}
+
+/* Subtle dark overlay so the label is readable */
+.ql-cell.ql-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 60%);
+    pointer-events: none;
+}
+
+.ql-image-label {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.5rem;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+/* ---- Text cells — only these have inner padding ---- */
+.ql-cell.ql-text {
+    padding: 2.5rem 2.75rem;   /* margin lives here, not in the grid */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.ql-cell.ql-text-green {
+    background-color: var(--dmv-green);
+    color: #fff;
+}
+
+.ql-cell.ql-text-dark {
+    background-color: var(--dmv-green-dark);
+    color: #fff;
+}
+
+.ql-cell.ql-text i {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    opacity: 0.85;
+}
+
+.ql-cell.ql-text h4 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0.3px;
+}
+
+.ql-cell.ql-text p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    opacity: 0.9;
+    margin-bottom: 1.25rem;
+}
+
+.ql-cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #fff;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    padding-bottom: 2px;
+    text-decoration: none;
+    transition: border-color 0.2s;
+}
+
+.ql-cta-link:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+/* Responsive: stack to single column on small screens */
+@media (max-width: 640px) {
+    .ql-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ql-cell {
+        min-height: 220px;
+    }
+}
+
+/* =====================
+   Visit Us Section
+   ===================== */
+.visit-section {
+    padding: 2.5rem 0;
+    background-color: var(--dmv-gray-light);
+}
+
+.hours-card {
+    background: #fff;
+    border: 1px solid var(--dmv-gray);
+    border-left: 4px solid var(--dmv-green);
+    border-radius: 4px;
+    padding: 1.25rem;
+    height: 100%;
+    transition: box-shadow 0.2s;
+}
+
+.hours-card:hover {
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.hours-card h6 {
+    font-weight: 700;
+    color: var(--dmv-green-dark);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 0.5rem;
+}
+
+.hours-card p {
+    font-size: 0.88rem;
+    color: var(--dmv-text-muted);
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.map-placeholder {
+    background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+    border-radius: 8px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dmv-green-dark);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border: 2px solid var(--dmv-green-light);
+    cursor: pointer;
+    transition: filter 0.2s;
+}
+
+.map-placeholder:hover {
+    filter: brightness(0.95);
+}
+
+/* =====================
+   Online Services CTA
+   ===================== */
+.skip-trip-card {
+    background: linear-gradient(135deg, var(--dmv-blue) 0%, var(--dmv-blue-light) 100%);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.skip-trip-card h6 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.skip-trip-card p {
+    font-size: 0.88rem;
+    opacity: 0.9;
+    margin-bottom: 0.75rem;
+}
+
+.skip-trip-card a {
+    background: #fff;
+    color: var(--dmv-blue);
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.skip-trip-card a:hover {
+    background: #e3f2fd;
+}
+
