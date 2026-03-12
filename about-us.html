@@ -3,20 +3,22 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Learn more about DMV Services, our mission, team, and frequently asked questions. Schedule appointments online or contact us."
+        />
+        <title>About Us</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
             rel="stylesheet"
         />
         <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
             rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="css/custom.css"
         />
+        <link rel="stylesheet" href="css/custom.css" />
         <link rel="stylesheet" href="css/about-us.css" />
-        <title>About Us</title>
     </head>
-
     <body>
         <!-- Navigation Bar -->
         <header>
@@ -113,17 +115,28 @@
                                     >About</a
                                 >
                             </li>
+
+                            <!-- Contact -->
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="contact-us.html"
+                                    >Contact</a
+                                >
+                            </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
 
-        <!-- Input html here in this section and create additional
-         sections if needed-->
-        <section class="welcome-banner">
-            <div class="container text-center">
-                <h1 class="display-4">About Us</h1>
+        <!-- Hero Banner -->
+        <section class="hero-banner d-flex text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">About DMV Services</h1>
+                <p class="lead">
+                    Providing efficient, reliable, and accessible DMV solutions
+                    for everyone.
+                </p>
+                <a href="#faq" class="btn btn-lg btn-light mt-3">View FAQs</a>
             </div>
         </section>
 
@@ -275,9 +288,7 @@
                             </p>
                     </div>
                 </div>
-                <!-- /row -->
             </div>
-            <!-- /container -->
         </section>
 
         <!-- Footer -->
@@ -297,7 +308,6 @@
             </div>
         </footer>
 
-        <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
