@@ -13,6 +13,8 @@
             media="screen"
             href="css/custom.css"
         />
+        <link rel="stylesheet" href="css/vehicle-pages.css" />
+        <link rel="stylesheet" href="css/appointment.css" />
         <title>Document</title>
     </head>
 
@@ -125,9 +127,195 @@
             </nav>
         </header>
 
-        <!-- Input html here in this section and create additional
-         sections if needed-->
-        <section><p>hello</p></section>
+        <!-- Main Content -->
+        <main class="page-background road-test-bg">
+            <!-- Page Header -->
+            <section class="welcome-banner">
+                <div class="container text-center">
+                    <h1 class="display-4">Book a Road Test Appointment</h1>
+                </div>
+            </section>
+ 
+            <!-- Intro Section -->
+            <div class="py-4 transparent-light">
+                <div class="container">
+                    <p class="lead">
+                        <strong>Road Test Appointment:</strong>
+                        A road test is required to obtain your driver license. You must hold a valid
+                        permit for the required period before scheduling your road test. Make sure
+                        you arrive with a licensed driver and a vehicle that passes a pre-inspection.
+                    </p>
+                    <p>
+                        Appointments are available Monday through Saturday at participating DMV locations.
+                        You may reschedule or cancel up to 48 hours before your appointment without penalty.
+                    </p>
+                </div>
+            </div>
+ 
+            <!-- Requirements Section -->
+            <div class="py-4 transparent-light">
+                <div class="container">
+                    <p class="lead">
+                        <strong>Before You Book:</strong>
+                        Ensure you meet all eligibility requirements. You must be at least 17 years old,
+                        have held a valid permit for the required time, and have completed any required
+                        supervised driving hours.
+                    </p>
+                    <p>
+                        On the day of your test, bring your valid permit, a completed
+                        <strong>6 Points of ID</strong>, and a vehicle with current registration and insurance.
+                    </p>
+                </div>
+            </div>
+ 
+            <!-- FAQ Section -->
+            <div class="py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <p><br /></p>
+                            <h5 class="inspection-title mb-4">Road Test — Common Questions</h5>
+ 
+                            <div class="accordion custom-accordion" id="roadTestFaqAccordion">
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed custom-accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#rtOne"
+                                            aria-expanded="false"
+                                            aria-controls="rtOne"
+                                        >
+                                            What documents do I need on the day of my road test?
+                                        </button>
+                                    </h2>
+                                    <div id="rtOne" class="accordion-collapse collapse">
+                                        <div class="accordion-body custom-accordion-body">
+                                            You must bring your valid learner's permit, proof of identity
+                                            (6 Points of ID), and a vehicle with current registration and
+                                            insurance. The accompanying licensed driver must also have their
+                                            license present.
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed custom-accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#rtTwo"
+                                            aria-expanded="false"
+                                            aria-controls="rtTwo"
+                                        >
+                                            How long do I need to hold my permit before taking the road test?
+                                        </button>
+                                    </h2>
+                                    <div id="rtTwo" class="accordion-collapse collapse">
+                                        <div class="accordion-body custom-accordion-body">
+                                            Most applicants must hold their permit for a minimum of one year
+                                            before scheduling a road test. If you are under 21, you must also
+                                            complete the required supervised driving hours.
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed custom-accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#rtThree"
+                                            aria-expanded="false"
+                                            aria-controls="rtThree"
+                                        >
+                                            What happens if I fail my road test?
+                                        </button>
+                                    </h2>
+                                    <div id="rtThree" class="accordion-collapse collapse">
+                                        <div class="accordion-body custom-accordion-body">
+                                            If you do not pass your road test, you may reschedule after a
+                                            waiting period. There is no limit on the number of attempts, but
+                                            each re-test requires a new appointment and applicable fees.
+                                        </div>
+                                    </div>
+                                </div>
+ 
+                                <div class="accordion-item border-0 mb-3">
+                                    <h2 class="accordion-header">
+                                        <button
+                                            class="accordion-button collapsed custom-accordion-btn"
+                                            type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#rtFour"
+                                            aria-expanded="false"
+                                            aria-controls="rtFour"
+                                        >
+                                            Can I use my own vehicle for the road test?
+                                        </button>
+                                    </h2>
+                                    <div id="rtFour" class="accordion-collapse collapse">
+                                        <div class="accordion-body custom-accordion-body">
+                                            Yes. You are required to provide your own vehicle for the road test.
+                                            The vehicle must be in safe working condition, properly registered,
+                                            and insured. The examiner will perform a brief pre-inspection before
+                                            the test begins.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <!-- Booking Form Section -->
+            <div class="py-5 transparent-light">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <h5 class="inspection-title mb-4">Schedule Your Road Test</h5>
+                            <div class="appointment-form-card">
+                                <div id="road-test-form-container">
+                                    <!-- Step indicators -->
+                                    <div class="step-indicators mb-4">
+                                        <span class="step-dot active" id="dot-1"></span>
+                                        <span class="step-line"></span>
+                                        <span class="step-dot" id="dot-2"></span>
+                                        <span class="step-line"></span>
+                                        <span class="step-dot" id="dot-3"></span>
+                                    </div>
+ 
+                                    <!-- Step 1: Personal Info -->
+                                    <div class="form-step" id="step-1">
+                                        <h6 class="step-title mb-3">Step 1 of 3 — Personal Information</h6>
+                                        <div class="mb-3">
+                                            <label class="form-label appt-label">Full Name</label>
+                                            <input type="text" class="form-control appt-input" id="rt-name" placeholder="Jane Doe" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label appt-label">Date of Appointment</label>
+                                            <input type="date" class="form-control appt-input" id="rt-dob" />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label appt-label">Permit Number</label>
+                                            <input type="text" class="form-control appt-input" id="rt-permit" placeholder="e.g. P1234567" />
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label appt-label">Email Address</label>
+                                            <input type="email" class="form-control appt-input" id="rt-email" placeholder="you@example.com" />
+                                        </div>
+                                        <button class="btn appt-btn-primary w-100">Continue</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <!-- Footer -->
         <footer class="bg-dark text-white py-4">
