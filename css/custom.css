@@ -1,3 +1,5 @@
+/* Custom Styles (global) */
+
 body::before {
     display: block;
     content: '';
