@@ -1,0 +1,78 @@
+
+/* --- Appointment Form Card --- */
+.appointment-form-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+}
+ 
+/* --- Step Progress Indicators --- */
+.step-indicators {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.step-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #c8d6e8;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+ 
+.step-dot.active {
+    background: #001f4e;
+    box-shadow: 0 0 0 3px rgba(0, 31, 78, 0.2);
+}
+ 
+.step-dot.completed {
+    background: #80c341;
+}
+ 
+.step-line {
+    flex: 1;
+    max-width: 80px;
+    height: 2px;
+    background: #c8d6e8;
+    margin: 0 6px;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+ 
+.step-line.completed {
+    background: #80c341;
+}
+ 
+/* --- Form Labels & Inputs --- */
+.appt-label {
+    font-weight: 600;
+    color: #203a43;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+ 
+.appt-input {
+    border: 1.5px solid #c8d6e8;
+    border-radius: 8px;
+    padding: 0.6rem 0.9rem;
+    font-size: 0.95rem;
+    color: #1a1a2e;
+    background-color: #f7fafd;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.appt-input:focus {
+    border-color: #001f4e;
+    box-shadow: 0 0 0 3px rgba(0, 31, 78, 0.12);
+    background-color: #fff;
+    outline: none;
+}
+ 
+.appt-input.is-invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.12);
+}
+ 
